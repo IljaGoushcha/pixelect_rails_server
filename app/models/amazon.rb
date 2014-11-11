@@ -22,3 +22,6 @@ class Amazon # no inheritance here bc this class does not connect to Postgres
     return {access_key: access_key, key: key, policy: policy, signature: signature, sas: sas, bucket: bucket, acl: acl, expiration: expiration}
   end
 end
+
+
+# bucket = ENV['S3_BUCKET']
