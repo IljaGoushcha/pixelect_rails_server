@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'image_sets#index'
+  get 'amazon/sign_key'
 
   devise_for :users
   resources :image_sets
