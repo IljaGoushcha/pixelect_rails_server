@@ -8,7 +8,7 @@ class ImagesController < ApplicationController
   def show
     @image = Image.find(params[:id])
     if @image
-      render json: @image, status: :created, location: @image
+      render json: @image, :include => :likes, status: :created, location: @image
     else
       render json: @image.errors, status: :unprocessable_entity
     end

@@ -6,9 +6,9 @@ class ImageSetsController < ApplicationController
   end
 
   def show
-    @image_set = ImageSet.find(params[:id])
+    @image_set = ImageSet.find(params[:id]) # {:images => :likes}
     if @image_set
-      render json: @image_set, :include => [:images, :comments], status: :created, location: @image_set
+      render json: @image_set, :include => [:comments, :images => {:include => :likes}], status: :created, location: @image_set #
     else
       render json: @image_set.errors, status: :unprocessable_entity
     end
