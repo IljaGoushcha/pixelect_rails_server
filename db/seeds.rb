@@ -1,6 +1,7 @@
 ImageSet.delete_all
 Image.delete_all
 Like.delete_all
+Comment.delete_all
 
 @image_set1 = ImageSet.create(voting_criteria: "Who has better rims", total_likes: 10, user_id: 1)
 @image_set2 = ImageSet.create(voting_criteria: "Who is THE redneck", total_likes: 20, user_id: 2)
@@ -15,17 +16,6 @@ Like.delete_all
 @image7 = Image.create(file_name: "body_hair_1", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/350849d8-c1e0-476b-bd79-74a3d95fbb93", flag: 0, image_set_id: 3)
 @image8 = Image.create(file_name: "body_hair_2", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/cfed9579-d1a3-4da9-8262-5a4ae36269e1", flag: 0, image_set_id: 3)
 @image9 = Image.create(file_name: "body_hair_3", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/a861df65-b726-4e24-8111-753d33c0f153", flag: 0, image_set_id: 3)
-
-
-@like_01 = Like.create(user_id: 1, image_id: 1)
-@like_02 = Like.create(user_id: 2, image_id: 1)
-@like_03 = Like.create(user_id: 3, image_id: 1)
-@like_04 = Like.create(user_id: 4, image_id: 1)
-@like_05 = Like.create(user_id: 5, image_id: 2)
-@like_06 = Like.create(user_id: 6, image_id: 2)
-@like_07 = Like.create(user_id: 7, image_id: 2)
-@like_08 = Like.create(user_id: 8, image_id: 2)
-
 
 
 # This file should contain all the record creation needed to seed the database with its default values.
