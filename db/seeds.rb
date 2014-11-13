@@ -3,9 +3,9 @@ Image.delete_all
 Like.delete_all
 Comment.delete_all
 
-@image_set1 = ImageSet.create(voting_criteria: "Who has better rims", total_likes: 10, user_id: 1)
-@image_set2 = ImageSet.create(voting_criteria: "Who is THE redneck", total_likes: 20, user_id: 2)
-@image_set3 = ImageSet.create(voting_criteria: "Who needs to shave the most?", total_likes: 30, user_id: 3)
+@image_set1 = ImageSet.create(voting_criteria: "Who has better rims", total_likes: 0, user_id: 1)
+@image_set2 = ImageSet.create(voting_criteria: "Who is THE redneck", total_likes: 0, user_id: 2)
+@image_set3 = ImageSet.create(voting_criteria: "Who needs to shave the most?", total_likes: 0, user_id: 3)
 
 @image1 = Image.create(file_name: "pimp_mobile_1", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/d9e54f00-7bcb-4673-adce-bd2535b63b94", flag: 0, image_set_id: 1)
 @image2 = Image.create(file_name: "pimp_mobile_2", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/b620526d-e923-4a82-b8e2-0430e3eac61c", flag: 0, image_set_id: 1)
