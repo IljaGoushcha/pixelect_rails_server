@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :tags
   get 'recent/get_recent'
   get 'favorite/get_favorite'
+  get 'total_likes/:id' => 'total_likes#get_total_likes'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
