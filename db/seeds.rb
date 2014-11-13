@@ -3,9 +3,10 @@ Image.delete_all
 Like.delete_all
 Comment.delete_all
 
-@image_set1 = ImageSet.create(voting_criteria: "Who has better rims", total_likes: 0, user_id: 1)
-@image_set2 = ImageSet.create(voting_criteria: "Who is THE redneck", total_likes: 0, user_id: 2)
+@image_set1 = ImageSet.create(voting_criteria: "Who has better rims?", total_likes: 0, user_id: 1)
+@image_set2 = ImageSet.create(voting_criteria: "Who is THE redneck?", total_likes: 0, user_id: 2)
 @image_set3 = ImageSet.create(voting_criteria: "Who needs to shave the most?", total_likes: 0, user_id: 3)
+@image_set3 = ImageSet.create(voting_criteria: "Who had most steroids?", total_likes: 0, user_id: 5)
 
 @image1 = Image.create(file_name: "pimp_mobile_1", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/d9e54f00-7bcb-4673-adce-bd2535b63b94", flag: 0, image_set_id: 1)
 @image2 = Image.create(file_name: "pimp_mobile_2", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/b620526d-e923-4a82-b8e2-0430e3eac61c", flag: 0, image_set_id: 1)
@@ -16,7 +17,9 @@ Comment.delete_all
 @image7 = Image.create(file_name: "body_hair_1", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/350849d8-c1e0-476b-bd79-74a3d95fbb93", flag: 0, image_set_id: 3)
 @image8 = Image.create(file_name: "body_hair_2", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/cfed9579-d1a3-4da9-8262-5a4ae36269e1", flag: 0, image_set_id: 3)
 @image9 = Image.create(file_name: "body_hair_3", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/a861df65-b726-4e24-8111-753d33c0f153", flag: 0, image_set_id: 3)
-
+@image10 = Image.create(file_name: "strong_guy_1", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/623e6051-af1d-4ef9-bf40-6bfb63a41607", flag: 0, image_set_id: 4)
+@image11 = Image.create(file_name: "strong_guy_2", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/c2337715-6197-470b-b4ef-407eff22eb59", flag: 0, image_set_id: 4)
+@image12 = Image.create(file_name: "strong_guy_3", image_file: "empty", image_url: "https://s3.amazonaws.com/pixelect-ig/uploads/b62b9f75-b6fb-413c-a2ce-1f51d71470cf", flag: 0, image_set_id: 4)
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
