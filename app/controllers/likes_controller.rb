@@ -15,6 +15,13 @@ class LikesController < ApplicationController
   end
 
   def create
+    # updates total_likes of the image_set
+    @image =Image.find(params[:like][:image_id])
+    @image_set_id = @image[:image_set_id]
+    @image_set = ImageSet.find(@image_set_id)
+    @temp_likes = @image_set[:total_likes] + 1
+    @image_set.update_attribute(:total_likes, @temp_likes)
+
     @like = Like.new(allowed_params)
 
     if @like.save
