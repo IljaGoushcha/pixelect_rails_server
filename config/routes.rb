@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   root to: 'image_sets#index'
   get 'amazon/sign_key'
 
