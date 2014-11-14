@@ -23,6 +23,8 @@ gem 'dotenv-rails'
 gem 'pry-rails'
 gem 'pry-byebug'
 
+gem 'doorkeeper'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
