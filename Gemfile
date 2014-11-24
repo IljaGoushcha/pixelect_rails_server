@@ -25,6 +25,12 @@ gem 'pry-byebug'
 
 gem 'doorkeeper'
 
+gem 'newrelic_rpm'
+
+## Additional gems for query optimization demo
+
+gem 'bullet', group: :development
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -1,7 +1,7 @@
 class ImageSetsController < ApplicationController
 
   def index
-    @image_sets = ImageSet.all
+    @image_sets = ImageSet.includes(:images).all
     render json: @image_sets, :include => :images
   end
 
